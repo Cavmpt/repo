@@ -1,0 +1,13 @@
+.animated-section {
+    width: 100%;
+    height: 100vh;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+
+    &__canvas {
+        height: 100%;
+        width: 100%;
+    }
+}

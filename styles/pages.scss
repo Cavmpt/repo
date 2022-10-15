@@ -1,0 +1,8 @@
+@import './pages/index.scss';
+@import './pageComponents.scss';
+@import './assets/fonts.scss';
+@import './pages/[location]/services.scss';
+@import './pages/[location]/equipement-store/index.scss';
+@import './pages/[location]/equipement-store/[product-type]/index.scss';
+@import './pages/[location]/equipement-store/[product-type]/[productName].scss';
+@import './pages/info/[page]/index.scss';

@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  color:black;
+  background-color: white;
+  padding: 1rem;
+  font-family: 'roboto-normal-normal';
+
+  &__description {
+    line-height: 1.5rem;
+  }
+
+  &__first-section {
+    display: flex;
+  }
+
+  ul > li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  &__about-us {
+    width: 15%;
+    margin-right: 2rem;
+  }
+
+  &__information {
+    width: 20%;
+  }
+
+  &__work-with-us {
+    width: 20%;
+  }
+
+  &__newsletter {
+    margin-left: auto;
+    margin-right: 0rem;
+
+    &__input {
+
+    }
+  }
+}

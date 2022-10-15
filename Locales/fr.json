@@ -1,0 +1,9 @@
+{
+  "Nav" : {
+    "services": "services",
+    "FAQ": "FAQ",
+    "shipping": "transport",
+    "customer-care": "service aux clients",
+    "call-us": "contactez nous"
+  }
+}

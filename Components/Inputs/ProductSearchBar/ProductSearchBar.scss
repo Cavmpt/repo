@@ -1,0 +1,32 @@
+.product-search {
+  display: flex;
+  margin-right: 2rem;
+  width: 15rem;
+  
+  &__input {
+    width: 100%;
+    width: 15rem;
+    height: 2.2rem;
+    padding: 0rem;
+    border-radius: 2px 0px 0px 2px;
+    border-width: 1px;
+    border-right: 0px;
+    padding-left: 1rem;
+  }
+
+  &__button {
+    height: 100%;
+    width: 2.33rem;
+    height: 2.33rem;
+    background-color: orange;
+    display: flex;
+    place-items: center;
+    color:white;
+    border: none;
+    border-radius: 0px 2px 2px 0px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

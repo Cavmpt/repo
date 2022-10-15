@@ -1,0 +1,6 @@
+.weight-and-dimensions-table {
+    margin: 1rem;
+    width: 100%;
+
+    &__table-row:nth-child(even){background-color: #f2f2f2;}
+}

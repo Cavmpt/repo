@@ -1,0 +1,119 @@
+.self-description {
+    position: absolute;
+    color: white;
+    top: 15rem;
+    left: 10%;
+    font-family: "Bebas-neue";
+    z-index: 5;
+
+    &__name {
+        font-size: 3rem;
+        animation: appearLetter 1s;
+        display: flex;
+    }
+
+    &__job {
+        font-size: 3rem;
+        animation: appearLetter2 3s;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__line {
+        width: 15rem;
+        animation: appearLine 5s;
+        border-bottom: 1px solid white;
+        margin-bottom: 1rem;
+    }
+
+    &__location {
+        animation: appearLocation 6s;
+        font-size: 2rem;
+    }
+}
+
+
+@keyframes appearLetter {
+    0% {
+        opacity: 0;
+        display: none;
+        transform: translateY(1rem);
+    }
+
+    60% {
+        opacity: 0.6;
+        transform: translateY( -0.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes appearLetter2 {
+    0% {
+        opacity: 0;
+        display: none;
+        transform: translateY(0.8rem);
+    }
+
+    30% {
+        opacity: 0;
+        display: none;
+        transform: translateY(0.8rem);
+    }
+
+    60% {
+        opacity: 0.6;
+        transform: translateY( -0.3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes appearLine {
+    0% {
+        width: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    30% {
+        width: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    60% {
+        width: 0rem;
+    }
+
+    100% {
+        width: 15rem;
+    }
+}
+
+@keyframes appearLocation {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    60% {
+        opacity: 0;
+        display: none;
+        transform: translateX(-2rem); 
+    }
+    
+    80% {
+        opacity: 0.6;
+        transform: translateX(1rem); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem); 
+    }
+}

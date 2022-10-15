@@ -1,0 +1,28 @@
+.product-page {
+
+  &__top-section {
+    margin-top: 2rem;
+    display: flex;
+  }
+
+  &__image-wrapper {
+
+  }
+
+  &__image {
+    background-color: red;
+
+  }
+  &__image-section {
+    width: 40%;
+  }
+
+  &__description-section {
+    width: 60%;
+    background-color: yellow;
+  }
+
+  &__product-name {
+
+  }
+}

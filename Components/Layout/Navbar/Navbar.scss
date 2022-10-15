@@ -1,0 +1,29 @@
+.navbar-wrap {
+  height: 3rem;
+  width: 100%;
+  color: white;
+  font-family: "Bebas-neue";
+  display: flex;
+  position: fixed;
+  
+  &__section-wrap {
+    margin-top: 1rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: 3rem;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+// @keyframes appear {
+//   0
+  
+// }

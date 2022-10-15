@@ -1,0 +1,23 @@
+.normal-layout {
+  height: 15rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  place-content: center;
+
+  &__blog-frame {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 33%;
+    height: 15rem;
+    background-image: url(https://via.placeholder.com/150);
+    display: flex;
+    place-content: center;
+  }
+  &__blog-button {
+    all: unset;
+    font-size: 2rem;
+    color: white;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;    
+  }
+  
+}

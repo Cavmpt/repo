@@ -1,0 +1,38 @@
+.arrow-left1 {
+  width: 5rem;
+  height: 5rem;
+  place-items: center;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translate(-1rem, -50%); // this takes care of the vertical centering
+  z-index: 5;
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow-inside-wrap {
+  text-align: center;
+  width: 100%;
+}
+
+.arrow-right1 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-1.5rem, -50%); // this takes care of the vertical centering
+  right: 0;
+  z-index: 5;
+  transition: 1s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

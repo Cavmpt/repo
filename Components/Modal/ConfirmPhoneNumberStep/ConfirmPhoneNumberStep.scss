@@ -1,0 +1,30 @@
+.confirm-phone-number {
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+
+    &__wrap {
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    &__phone-number-input {
+        margin-top: 2rem;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 2rem;
+        height: 2rem;
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    &__confirm-button {
+        margin: 0 auto;
+    }
+}
