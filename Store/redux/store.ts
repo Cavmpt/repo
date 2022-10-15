@@ -6,7 +6,6 @@ import locationSlice from "./slices/locationSlice";
 import languageSlice from "./slices/languageSlice";
 import productSlice from "./slices/productSlice";
 import ProductsAndCategoriesStore from "./slices/ProductsAndCategoriesStore";
-import loadingSlice from "./slices/loadingslice";
 
 const store = configureStore({
   reducer: {
@@ -16,7 +15,6 @@ const store = configureStore({
     location: locationSlice,
     language: languageSlice,
     products: productSlice,
-    loading: loadingSlice,
     productAndCategories: ProductsAndCategoriesStore,
   },
 });

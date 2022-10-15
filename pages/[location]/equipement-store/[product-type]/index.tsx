@@ -3,12 +3,7 @@ import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../Store/redux/store";
 import BlogLayout from "../../../../Components/BlogLayout/BlogLayout";
-import ProductSelect from "../../../../Components/Selects/ProductSelects/ProductSelects";
-import ProductCardsHolder from "../../../../Components/PageComponents/Product-type/ProductCardsHolder/ProductCardsHolder";
 import FeaturedProductCard from "../../../../Components/Cards/FeaturedProductsCard/FeaturedProductCard";
-import ProductCategoryCard from "../../../../Components/Cards/ProductCategoryCard/ProductCategoryCard";
-import CategorySelectNav from "../../../../Components/Sidebars/CategorySelectNav/CategorySelectNav";
-import ProductSuggestionNav from "../../../../Components/Sidebars/ProductSuggestionNav/ProductSuggestionNav";
 
 export interface IEquipementStoreProps {}
 
@@ -90,9 +85,7 @@ export default function EquipementStore(props: IEquipementStoreProps) {
 
   return (
     <div className="category-page">
-      <section className="category-page__left-nav">
-        <CategorySelectNav />
-      </section>
+      <section className="category-page__left-nav"></section>
       <section className="category-page__middle-block">
         <BlogLayout blogData={blogData} />
         <div className="category-page__featured-section">
@@ -116,14 +109,7 @@ export default function EquipementStore(props: IEquipementStoreProps) {
           <div className="category-page__product-categories">
             {productCategoryCard.map(category => {
               const { productImageUrl, title, description } = category;
-              return (
-                <ProductCategoryCard
-                  key={title}
-                  name="category 1"
-                  backgroundImage="https://via.placeholder.com/150"
-                  onClick={() => console.log("hittt")}
-                />
-              );
+              return <div></div>;
             })}
           </div>
         </div>
@@ -133,13 +119,9 @@ export default function EquipementStore(props: IEquipementStoreProps) {
               More Top SellingTransformers & UPS
             </h1>
           </div>
-          <ProductSelect />
-          <ProductCardsHolder />
         </div>
       </section>
-      <section className="category-page__right-nav">
-        <ProductSuggestionNav />
-      </section>
+      <section className="category-page__right-nav"></section>
     </div>
   );
 }
