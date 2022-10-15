@@ -27,34 +27,6 @@ export default function ListCategories(props: IListCategoriesProps) {
   ];
   return (
     <div className="list-categories">
-      {categoriesHolder.map(categories => {
-        return (
-          <div
-            className="list-categories__single-categories"
-            onMouseEnter={() => setHoveredSlice(categories)}
-            onMouseLeave={() => setHoveredSlice("")}
-            key={categories}
-          >
-            <div className="list-categories__name">{categories}</div>
-            <div
-              className={
-                hoveredSlice === categories
-                  ? "list-categories__onHoverEffect"
-                  : "display-none"
-              }
-            >
-              <div className="list-categories__shop-wrapper">
-                <div className="list-categories__shop-now-text">shop now</div>
-                <span
-                  className="iconify"
-                  data-icon="ep:arrow-right-bold"
-                  data-inline="false"
-                />
-              </div>
-            </div>
-          </div>
-        );
-      })}
     </div>
   );
 }

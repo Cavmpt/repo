@@ -99,10 +99,7 @@ export default function EquipementStore(props: IEquipementStoreProps) {
         <div className="category-page__category-page">
           <h1 className="category-page__featured-title">Featured Categories</h1>
           <div className="category-page__product-categories">
-            {productCategoryCard.map(category => {
-              const { productImageUrl, title, description } = category;
-              return <div></div>;
-            })}
+          
           </div>
         </div>
         <div className="category-page__product-section">

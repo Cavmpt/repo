@@ -20,9 +20,7 @@ export default function Services(props: IServicesProps) {
 
       </div> */}
       <div className="services-offered__services-wrap">
-        {servicesOffered.map((item): any => (
-          <ServiceCard key={item.title} />
-        ))}
+       
       </div>
     </div>
   );

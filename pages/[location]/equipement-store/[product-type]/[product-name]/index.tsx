@@ -20,11 +20,6 @@ export default function ProductName(props: IProductNameProps) {
   const AllProducts = useSelector(
     (state: RootState) => state.products.productStore,
   );
-  const currentProduct = AllProducts.forEach(item => {
-    if (item.name === currentProductName) {
-      return item;
-    }
-  });
 
   return <div className="product-page"></div>;
 }
