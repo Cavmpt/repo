@@ -26,7 +26,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Provider store={store}>
         <NextIntlProvider messages={pageProps.messages}>
           <Layout>
-            <Modal />
             <Component {...pageProps} />
           </Layout>
         </NextIntlProvider>
