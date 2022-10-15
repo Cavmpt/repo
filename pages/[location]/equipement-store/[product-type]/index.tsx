@@ -2,8 +2,6 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../Store/redux/store";
-import BlogLayout from "../../../../Components/BlogLayout/BlogLayout";
-import FeaturedProductCard from "../../../../Components/Cards/FeaturedProductsCard/FeaturedProductCard";
 
 export interface IEquipementStoreProps {}
 
@@ -87,19 +85,13 @@ export default function EquipementStore(props: IEquipementStoreProps) {
     <div className="category-page">
       <section className="category-page__left-nav"></section>
       <section className="category-page__middle-block">
-        <BlogLayout blogData={blogData} />
         <div className="category-page__featured-section">
           <h1 className="category-page__featured-title">Featured Section</h1>
           <div className="category-page__featured-images">
             {FeaturedProducts.map(featuredProduct => {
               const { FeaturedImageUrl, title, description } = featuredProduct;
               return (
-                <FeaturedProductCard
-                  FeaturedImageUrl={FeaturedImageUrl}
-                  title={title}
-                  description={description}
-                  key={FeaturedImageUrl}
-                />
+              <div/>
               );
             })}
           </div>

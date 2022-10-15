@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-import GeneralPurposeButton from "../../Buttons/GeneralPurposeButton/GeneralPurposeButton";
 import { useDispatch } from "react-redux";
 import { setUsername } from "../../../Store/redux/slices/userSlice";
 import { setModalContent } from "../../../Store/redux/slices/modalSlice";
@@ -77,9 +76,6 @@ export default function LoginSignupBar(props: ILoginSignupBarProps) {
               }}
             />
           </div>
-          <GeneralPurposeButton onClick={() => ContinueSignup()}>
-            login or signup
-          </GeneralPurposeButton>
         </section>
         <section className="login-with-social">
           <button className="login-with-google"> Login with Google</button>

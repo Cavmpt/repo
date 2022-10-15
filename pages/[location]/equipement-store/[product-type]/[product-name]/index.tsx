@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../../../../../Components/Cards/product-card/product-card";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../../Store/redux/store";
