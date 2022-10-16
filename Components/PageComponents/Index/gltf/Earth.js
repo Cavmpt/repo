@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 export default function Model(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "http://localhost:3000/earth.gltf",
+    "/earth.gltf",
   )
   const { actions } = useAnimations(animations, group);
   return (
@@ -977,4 +977,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("http://localhost:3000/earth.gltf");
+useGLTF.preload("/earth.gltf");
